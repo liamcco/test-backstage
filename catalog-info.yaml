@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-service
+  description: A sample service for demonstrating Backstage.
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/my-org/my-service/tree/main
+  tags:
+    - backend
+    - nodejs
+  links:
+    - url: https://github.com/my-org/my-service
+      title: GitHub Repository
+      icon: github
+spec:
+  type: service
+  lifecycle: production
+  owner: team-alpha
+  system: core-services
